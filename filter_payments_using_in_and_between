@@ -1,0 +1,11 @@
+-- This query selects all payments made by customers with IDs 322, 346, or 354.
+-- It filters for payments where the amount is either less than 2 or greater than 10.
+-- The results are sorted by customer_id in ascending order and amount in descending order.
+SELECT
+*
+FROM payment
+WHERE
+(customer_id = 322 OR customer_id = 346 OR customer_id = 354)
+AND
+(amount < 2 OR amount > 10)
+ORDER BY customer_id ASC, amount DESC
