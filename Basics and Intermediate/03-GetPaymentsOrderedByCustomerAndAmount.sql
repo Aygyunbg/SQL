@@ -1,0 +1,9 @@
+-- Retrieves all records from the payment table
+-- Orders them by customer_id in ascending order
+-- and then by amount in descending order
+SELECT
+*
+FROM payment
+ORDER BY customer_id, amount DESC
+
+

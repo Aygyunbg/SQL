@@ -1,0 +1,10 @@
+-- This query selects all customers whose first name has exactly 3 characters,
+-- and whose last name ends with either 'X' or 'Y'.
+-- Demonstrates the use of the LIKE operator with '_' for exact character count,
+-- and '%' for partial pattern matching, combined with AND/OR logic.
+SELECT
+*
+FROM customer
+WHERE first_name LIKE '___'
+AND (last_name LIKE '%X'
+OR last_name LIKE '%Y')

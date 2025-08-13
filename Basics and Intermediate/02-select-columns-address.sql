@@ -1,0 +1,5 @@
+-- Retrieves the address and district columns from the address table
+SELECT
+address,
+district
+FROM address
